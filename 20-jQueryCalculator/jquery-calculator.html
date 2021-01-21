@@ -78,15 +78,23 @@
 $(document).ready(function() {
 
 // create button variables with querySelectors
-  var numberButton = $('.btn-primary number')
+  var numberButton = $('.number');
+    console.log(numberButton);
 
-  numberButton.addEventListener('click', function(event){
-    console.log(this.event.target.textContent);
-  };
+  numberButton.on('click', function(){
+    console.log(this.value);
+  });
   //add event listeners per button
-    // capture the textContent of the event('this'(button))
-    // create the math principles for +, -, /, *, ^(**), clear
-    // user should see content of typed key
+  // capture the textContent of the event('this'(button))
+    // we will need to convert the user input string into a number --> parseInt() function
+    // what if the user does more than 1 action at a time? something (concatenate) (x*y) something = something
+  // create the math principles for +, -, /, *, ^(**), clear
+  // user should see content of typed key(?) --> optional
+  // while loop --> change every string into a number
+
+  // Operators
+    // based on the operators text content we can have dynamic functionality
+    // focus on just 1 operator: the addition operator. function with a list of numbers or array.
 });
 
 </script>
