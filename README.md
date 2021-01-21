@@ -1,1 +1,0 @@
-# class_jQuery_calculator
