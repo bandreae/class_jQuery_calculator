@@ -79,11 +79,28 @@ $(document).ready(function() {
 
 // create button variables with querySelectors
   var numberButton = $('.number');
-    console.log(numberButton);
-
   numberButton.on('click', function(){
-    console.log(this.value);
   });
+  
+  var operatorButton = $('.operator');
+  operatorButton.on('click', function(){
+  });
+
+  var equalButton = $('.equal');
+  equalButton.on('click', function(){
+  });
+
+  var clearButton = $('.clear');
+  clearButton.on('click', function(){
+  });
+
+// function area
+function addition(array) {
+  // parseInt the array for all the numbers
+  // add those numbers
+
+}
+
   //add event listeners per button
   // capture the textContent of the event('this'(button))
     // we will need to convert the user input string into a number --> parseInt() function
